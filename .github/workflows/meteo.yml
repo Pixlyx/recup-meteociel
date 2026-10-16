@@ -1,0 +1,54 @@
+# À placer dans le dépôt sous : .github/workflows/meteo.yml
+# Le script meteociel_scraper.py doit être à la racine du dépôt.
+name: Meteo - recuperation des previsions
+
+on:
+  schedule:
+    # Toutes les heures (à :15, heure UTC). Le script ne télécharge un modèle que
+    # s'il est "dû" et ne réécrit son CSV que si un nouveau run est détecté,
+    # donc la plupart des exécutions ne font aucune requête vers Meteociel.
+    - cron: "15 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Forcer le téléchargement de tous les modèles"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: meteo
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install requests beautifulsoup4
+
+      - name: Récupérer les prévisions
+        run: python meteociel_scraper.py ${{ inputs.force && '--force' || '' }}
+
+      - name: Enregistrer les CSV dans le dépôt
+        if: always()
+        run: |
+          git config user.name "meteo-bot"
+          git config user.email "meteo-bot@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "Aucun changement à enregistrer"
+          else
+            git commit -m "Prévisions $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git pull --rebase
+            git push
+          fi
