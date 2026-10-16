@@ -7,7 +7,7 @@ on:
     # Toutes les heures (à :15, heure UTC). Le script ne télécharge un modèle que
     # s'il est "dû" et ne réécrit son CSV que si un nouveau run est détecté,
     # donc la plupart des exécutions ne font aucune requête vers Meteociel.
-    - cron: "15 * * * *"
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       force:
