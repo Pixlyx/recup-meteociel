@@ -1,0 +1,18 @@
+modele,run_modele,run_z,run_utc,maj_affichee,recupere_le_utc,date,jour,heure,temp_c,temp_ressentie_c,vent_dir,vent_dir_deg,vent_moy_kmh,vent_raf_kmh,pluie_mm,humidite_pct,pression_hpa,temps
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,04:00,7,6,Ouest,270,5,5,0.0,99,1025,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,07:00,6,6,Ouest-Nord-Ouest,288,5,5,0.0,99,1026,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,10:00,6,6,Nord-Ouest,315,5,10,0.0,98,1026,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,13:00,8,7,Nord-Ouest,321,5,15,0.0,92,1025,Couvert
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,16:00,9,8,Nord-Nord-Ouest,339,10,15,0.0,84,1025,Couvert
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,19:00,6,5,Nord-Ouest,323,5,15,0.0,95,1025,Peu nuageux
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-30,Ven,22:00,2,1,Sud-Sud-Est,166,5,5,0.0,100,1025,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,01:00,4,3,Sud-Sud-Ouest,194,5,5,0.0,99,1026,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,04:00,5,4,Sud-Sud-Ouest,206,5,5,0.0,99,1026,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,07:00,5,4,Ouest-Nord-Ouest,284,5,5,0.0,99,1027,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,10:00,4,3,Nord-Nord-Ouest,333,5,10,0.0,97,1027,Brumes ou brouillard
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,13:00,6,4,Nord-Nord-Ouest,339,10,15,0.0,91,1027,Couvert
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,16:00,7,6,Nord,0,10,15,0.0,82,1026,Ciel clair
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,19:00,3,3,Ouest-Nord-Ouest,296,0,5,0.0,96,1025,Ciel clair
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-10-31,Sam,22:00,1,1,Nord,0,5,5,0.0,96,1025,Peu nuageux
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-11-01,Dim,01:00,-1,-1,Nord,0,0,0,0.0,99,1026,Brouillard givrant
+arome,AROME,0,2026-10-30T00:00Z,04:04,2026-10-30T06:00:57+00:00,2026-11-01,Dim,04:00,1,1,Nord-Est,45,5,5,0.0,99,1025,Brumes ou brouillard
